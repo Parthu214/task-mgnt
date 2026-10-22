@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"
+            defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Organize your work, one task at a time.</p>
+        </header>
+
+        <form id="task-form">
+            <input id="task-title" type="text"
+                   placeholder="Enter a new task..." maxlength="200" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <p id="message" role="status"></p>
+
+        <section>
+            <h2>My Tasks</h2>
+            <div id="task-list">
+                <p>Loading tasks...</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f5fb;
+    color: #202943;
+}
+
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px #dce1ed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #5148d8;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #667085;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ccd2df;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    padding: 11px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #5148d8;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3930ad;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e7eaf1;
+}
+
+.task-title {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.task-title.completed {
+    text-decoration: line-through;
+    color: #8b93a7;
+}
+
+.task input[type="checkbox"] {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+}
+
+.delete-btn {
+    background: #e5484d;
+}
+
+.delete-btn:hover {
+    background: #b4232b;
+}
+
+#message {
+    color: #5148d8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px 12px;
+        padding: 20px 15px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        padding: 13px;
+    }
+
+    .task {
+        flex-wrap: wrap;
+    }
+}
